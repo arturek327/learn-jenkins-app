@@ -53,7 +53,7 @@ pipeline {
             }
             steps {
                 sh '''
-                  npm fund 
+                  npm audir fix
                 '''
             }
         }
