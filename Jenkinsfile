@@ -53,11 +53,7 @@ pipeline {
             }
             steps {
                 sh '''
-                  npm audit fix --force
-                  npm install netlify-cli
-                  node_modules/.bin/netlify --version
-                  echo "Deploying to production. Site ID: $NETLIFY_SITE_ID"
-                  node_modules/.bin/netlify status 
+                  npm audit fix --force 
                 '''
             }
         }
