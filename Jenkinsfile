@@ -53,7 +53,7 @@ pipeline {
             }
             steps {
                 sh '''
-                  npm audir fix
+                  npm audit fix
                 '''
             }
         }
