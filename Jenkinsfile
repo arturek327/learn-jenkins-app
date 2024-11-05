@@ -53,7 +53,7 @@ pipeline {
             }
             steps {
                 sh '''
-                  npm audit fix
+                  npm --version
                 '''
             }
         }
