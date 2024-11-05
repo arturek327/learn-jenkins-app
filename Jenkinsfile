@@ -53,7 +53,8 @@ pipeline {
             }
             steps {
                 sh '''
-                  node_modules/.bin/netlify status
+                  npm install netlify-cli
+                  node_modules/.bin/netlify --version
                 '''
             }
         }
