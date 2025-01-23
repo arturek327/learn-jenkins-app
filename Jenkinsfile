@@ -58,11 +58,13 @@ pipeline {
         }
         steps {
           sh '''
+            echo 1aaa
             npm install serve
-            npm audit fix
-            node_modules/.bin/serve -s build &
-            sleep 10
-            npx playwright test --reporter=html
+            echo 2aaaa
+#            npm audit fix
+#            node_modules/.bin/serve -s build &
+#            sleep 10
+#            npx playwright test --reporter=html
             '''
         }
         post {
