@@ -59,7 +59,7 @@ pipeline {
         steps {
           sh '''
             npm install serve
-            npm audit fix --force
+            npm audit fix
             node_modules/.bin/serve -s build &
             sleep 10
             npx playwright test --reporter=html
