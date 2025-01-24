@@ -60,11 +60,11 @@ pipeline {
             npx playwright test --reporter=html
             '''
         }
-        //post {
-        //  always {
-        //     publishHTML([allowMising:false, alwaysLinkToLastBuild:false, keepAll:false, reportDir: 'playwright-report', reportFiles: 'index.html', reportName:'Playwright Local', reportTitles: '', useWrapperFileDirectory:true])
-        //  }
-        //}
+        post {
+          always {
+             publishHTML([allowMising:false, alwaysLinkToLastBuild:false, keepAll:false, reportDir: 'playwright-report', reportFiles: 'index.html', reportName:'Playwright Local', reportTitles: '', useWrapperFileDirectory:true])
+          }
+        }
      } 
   }
 }
