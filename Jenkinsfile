@@ -45,6 +45,24 @@ pipeline {
                           }
                       }
           }
+        stage ('E2E') {
+        agent {
+          docker {
+            image 'node:18-alpine'
+            reuseNode true
+            }
+        }
+        steps {
+          sh '''
+            echo 1aaa
+#           npm install serve
+            echo 2aaaa
+#            npm audit fix
+#            node_modules/.bin/serve -s build &
+#            sleep 10
+#            npx playwright test --reporter=html
+            '''
+        }
      } 
   }
 }
