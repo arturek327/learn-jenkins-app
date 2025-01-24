@@ -62,7 +62,7 @@ pipeline {
         }
         post {
           always {
-             publishHTML([allowMising:false, alwaysLinkToLastBuild:false, keepAll:false, reportDir: 'playwright-report', reportFiles: 'index.html', reportName:'Playwright Local', reportTitles: '', useWrapperFileDirectory:true])
+              publishHTML([allowMising:false, alwaysLinkToLastBuild:false, keepAll:false, reportDir: 'playwright-report', reportFiles: 'index.html', reportName:'Playwright Local', reportTitles: '', useWrapperFileDirectory:true])
           }
         }
      } 
