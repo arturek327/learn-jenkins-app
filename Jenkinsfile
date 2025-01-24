@@ -35,10 +35,10 @@ pipeline {
                           }
                       steps {
                         sh '''
-                          echo 1
+                          echo abrakadabra1
                           test -f build/index.html
                           npm test
-                          echo 2
+                          echo abrakadabra2
                           '''
                       }
                       post {
