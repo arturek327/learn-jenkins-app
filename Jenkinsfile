@@ -55,7 +55,7 @@ pipeline {
         steps {
           sh '''
             echo 1aaa
-#           npm install serve
+            npm install serve
             echo 3aaaa
 #            npm audit fix
 #            node_modules/.bin/serve -s build &
