@@ -12,6 +12,11 @@ pipeline {
               image  'amazon/aws-cli'
             }
           }
+          steps {
+            sh '''
+               aws --version
+            '''
+          }
         }
         stage('Build') {
             agent {
