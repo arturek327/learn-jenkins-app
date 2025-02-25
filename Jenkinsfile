@@ -38,7 +38,7 @@ pipeline {
           steps {
               
              sh '''
-                docker build -t $APPNAME:$REACT_APP_VERSION .
+                docker build -t $APP_NAME:$REACT_APP_VERSION .
              '''
           }
         }
